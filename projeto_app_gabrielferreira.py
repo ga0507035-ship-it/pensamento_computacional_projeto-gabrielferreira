@@ -1,7 +1,4 @@
 #SISTEMA DE AÇAITERIA DG
-from random import random
-
-if random 
 
 
 usuarios = {"aluno": "123"} 
@@ -86,7 +83,7 @@ while True:
                         
                         if confirmar.lower() == "s":
                             # Lógica de distância e tempo (Simulação)
-                            distancia = round(random.uniform(1.2, 7.5), 1)
+                            distancia = 5  # Distância simulada em km
                             tempo_estimado = int(distancia * 8) # Média de 8 min por km
                             
                             novo_pedido = {
