@@ -99,17 +99,7 @@ while True:
                         print("\nCarrinho vazio. Pedido cancelado.")
 
                 elif escolha_cliente == "2":
-                    print("\n--- 🛵 RASTREAMENTO EM TEMPO REAL ---")
-                    tem_pedido = False
-                    for p in pedidos_realizados:
-                        if p['cliente'] == user_login:
-                            tem_pedido = True
-                            print("Seu pedido está a caminho, previsão de 30 a 45 minutos.")
-                            print(f"Status: {p['status']}")
-                            print(f"Itens do pedido: {p['itens']}")
-                    
-                    if not tem_pedido:
-                        print("Você não tem pedidos em andamento.")
+                    print("Seu pedido está a caminho, previsão de 30 a 45 minutos.")
                         
                     input("\nAperte Enter para voltar...")
 
