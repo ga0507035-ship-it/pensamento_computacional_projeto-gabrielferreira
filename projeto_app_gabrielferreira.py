@@ -1,7 +1,10 @@
-if random # Importamos para gerar a distância aleatória
+#SISTEMA DE AÇAITERIA DG
+from random import random
+
+if random 
 
 
-usuarios = {"aluno": "123"} # Usuário padrão para teste rápido
+usuarios = {"aluno": "123"} 
 pedidos_realizados = []
 
 # Cardápio Realista de Açaiteria (2026)
@@ -14,7 +17,7 @@ cardapio = [
 ]
 
 print("========================================")
-print("     🍧 BEM-VINDO À AÇAITERIA VIP 🍧     ")
+print("     🍧 BEM-VINDO À AÇAITERIA DG 🍧     ")
 print("========================================")
 
 while True:
@@ -105,6 +108,7 @@ while True:
                     for p in pedidos_realizados:
                         if p['cliente'] == user_login:
                             tem_pedido = True
+                            print("Seu pedido está a caminho, previsão de 30 a 45 minutos.")
                             print(f"Status: {p['status']}")
                             print(f"O entregador está a {p['distancia']} km de você.")
                             print(f"Tempo de espera: {p['tempo']} minutos.")
@@ -112,6 +116,7 @@ while True:
                     
                     if not tem_pedido:
                         print("Você não tem pedidos em andamento.")
+                        
                     input("\nAperte Enter para voltar...")
 
                 elif escolha_cliente == "3":
