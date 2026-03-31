@@ -33,7 +33,7 @@ while True:
         novo_usuario = input("Digite o nome de usuário: ")
         nova_senha = input("Digite a senha: ")
         usuarios[novo_usuario] = nova_senha
-        print("✅ Conta criada com sucesso! Agora faça o login.")
+        print(" Conta criada com sucesso! Agora faça o login.")
 
     elif opcao == "2":
         print("\n--- LOGIN ---")
@@ -76,7 +76,7 @@ while True:
                                 encontrado = True
                         
                         if encontrado == False:
-                            print("❌ Código não encontrado!")
+                            print(" Código não encontrado!")
 
                     # Finalização do Pedido
                     if total_conta > 0:
@@ -97,7 +97,7 @@ while True:
                                 "status": "Preparando seu Açaí..."
                             }
                             pedidos_realizados.append(novo_pedido)
-                            print("\n🚀 Pedido enviado para a cozinha!")
+                            print("\n Pedido enviado para a cozinha!")
                     else:
                         print("\nCarrinho vazio. Pedido cancelado.")
 
@@ -110,7 +110,7 @@ while True:
                     print("Saindo da conta...")
                     break
         else:
-            print("❌ Usuário ou senha incorretos!")
+            print(" Usuário ou senha incorretos!")
 
     elif opcao == "3":
         print("Finalizando o programa da Açaiteria. Até mais!")
